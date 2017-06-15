@@ -4,7 +4,12 @@
 
 @import 'sass/structure/vars';
 @import 'sass/mixins/*';
+
 @import 'sass/structure/reset';
 @import 'sass/structure/type';
 @import 'sass/structure/scaffold';
 @import 'sass/structure/buttons';
+
+@import 'sass/forms/*';
+
+@import 'sass/screens/*';

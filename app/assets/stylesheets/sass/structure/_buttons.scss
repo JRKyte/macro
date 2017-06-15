@@ -12,6 +12,8 @@
   border-radius: 20px;
   vertical-align: middle;
   line-height: 1;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .button-large {
   @extend .button;
@@ -23,4 +25,8 @@
   @extend .button;
   background-color: transparent;
   color: $primary-green;
+}
+.button-block {
+  display: block;
+  width: 100%;
 }
