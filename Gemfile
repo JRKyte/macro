@@ -8,6 +8,9 @@ git_source(:github) do |repo_name|
 end
 
 gem 'devise'
+gem 'factory_girl_rails'
+gem 'faker'
+gem 'high_voltage'
 gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
@@ -16,8 +19,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'slim'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
-gem 'factory_girl_rails'
-gem 'faker'
 
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
