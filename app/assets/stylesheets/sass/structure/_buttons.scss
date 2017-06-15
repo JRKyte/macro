@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  background-color: $primary-green;
+  border: none;
+  color: #FFFFFF;
+  font-size: em(12);
+  font-family: $font-bold;
+  font-weight: normal;
+  text-decoration: none;
+  border-radius: 20px;
+  vertical-align: middle;
+  line-height: 1;
+}
+.button-large {
+  @extend .button;
+  padding: 22px 25px;
+  font-size: em(15);
+  border-radius: 30px;
+}
+.button-clear {
+  @extend .button;
+  background-color: transparent;
+  color: $primary-green;
+}

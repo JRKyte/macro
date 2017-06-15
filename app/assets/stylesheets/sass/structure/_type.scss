@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Bariol';
+  src:  asset-url('bariol_regular.woff2') format('woff2'),
+        asset-url('bariol_regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Bariol-bold';
+  src:  asset-url('bariol_bold.woff2') format('woff2'),
+        asset-url('bariol_bold.woff') format('woff');
+}
+
+p {
+  margin: 0;
+  + p {
+    margin-top: 10px;
+  }
+}
+a {
+  color: $primary-green;
+}
+.text-l {
+  font-size: em(48);
+}
+.text-m {
+  font-size: em(20);
+}
+.text-s {
+  font-size: em(14);
+}
