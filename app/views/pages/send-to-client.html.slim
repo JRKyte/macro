@@ -1,0 +1,14 @@
+.modal
+  .modal__header
+    .modal__header-image=image_tag("icons/send.svg")
+    h1.text--l Send to client
+  .modal__content
+    .modal__description
+      p.text--m You’re about to send this diet to Russell Saunders. They’ll then be able to check-in with their weight and see any changes you make to their diet.
+    form
+      label for="client-email"
+        'Clients e-mail
+        input type="text" id="client-email" placeholder="arnold.swartzenegger@thepump.com"
+  .modal__footer
+    a href="#" class="button--large button--block" Send to client
+    button.button--clear.button--block Cancel

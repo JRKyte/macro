@@ -18,16 +18,26 @@ p {
 a {
   color: $primary-green;
 }
-.text-l {
+strong {
+  font-family: $font-bold;
+  font-weight: normal;
+}
+.text--l {
   font-size: em(48);
 }
-.text-m {
+.text--m {
   font-size: em(20);
+  line-height: 1.5;
 }
-.text-s {
+.text--s {
   font-size: em(14);
 }
-
-.text-center {
+.text--center {
   text-align: center;
+}
+.text--muted {
+  color: #8A8A8A;
+}
+.text--error {
+  color: #FF3D4A;
 }

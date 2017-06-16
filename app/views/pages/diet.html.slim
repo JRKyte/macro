@@ -1,0 +1,19 @@
+.page__container
+  .page__header
+    form
+      input type="text" placeholder="Diet #1" class="header__input"
+    .header__actions
+      button.button Done
+    .page__subheader
+      button.button--text + Add notes
+  .page__content
+    ul.list--unstyled.list--standard
+      -2.times do
+        li
+          a.list__item--standard href="#"
+            .list-item__content
+              strong.text--m Breakfast
+              .text--s.text--muted 40g Whey Isolate with water, 30g peanut butter in the shake. Multivitamin, omega 3 500mg, pro-biotic, lemon lime water
+
+    .text--center
+      button.button Add a meal

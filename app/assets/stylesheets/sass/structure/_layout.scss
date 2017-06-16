@@ -1,0 +1,20 @@
+.page__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding-left: 20px;
+}
+.page__header {
+  margin-bottom: 30px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page__subheader {
+  flex-basis: 100%;
+}
+.header__actions {
+  margin-left: auto;
+  padding-left: 20px;
+}

@@ -1,0 +1,26 @@
+.profile__header
+  .page__container
+    .page__header
+      .header__actions
+        button.button Edit client
+.page__container
+  .page__header
+    h1.text--l Russell Saunders
+    .page__subheader
+      span.text--m
+        .inline-icon=image_tag("icons/heart.svg")
+        '23 years old
+      span.text--m
+        .inline-icon=image_tag("icons/person.svg")
+        '5ft 11in
+
+  ul.list--unstyled.list--standard
+    -2.times do
+      li
+        a.list__item--standard
+          .list-item__content
+            strong.text--m Cutting diet
+            .text--s.text--muted Updated last week
+
+  .text--center
+    a.button href="#" Add a new diet

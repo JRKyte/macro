@@ -15,18 +15,34 @@
   text-align: center;
   letter-spacing: 2px;
 }
-.button-large {
+.button--large {
   @extend .button;
   padding: 22px 25px;
   font-size: em(15);
   border-radius: 30px;
 }
-.button-clear {
+.button--clear {
   @extend .button;
   background-color: transparent;
   color: $primary-green;
 }
-.button-block {
+.button--text {
+  @extend .button--clear;
+  padding: 0;
+}
+.button--icon-only {
+  @extend .button--clear;
+  padding: 0;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.button--block {
   display: block;
   width: 100%;
+}
+*[class^="button"] + *[class^="button"] {
+  margin-top: 20px;
 }

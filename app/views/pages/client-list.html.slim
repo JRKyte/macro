@@ -1,0 +1,17 @@
+.page__container
+  .page__header
+    h1.text--l Clients
+    .header__actions
+      button.button--icon-only=image_tag("icons/search.svg")
+  .page__content
+    ul.list--unstyled.list--standard
+      -6.times do
+        li.list__item--standard
+          .list-item__image
+            .avatar style="background-image: url('http://placehold.it/250x450');"
+          .list-item__content
+            strong.text--m Carl Payne
+            .text--s.text--muted Checks in tomorrow
+
+    .text--center
+      button.button Add a client

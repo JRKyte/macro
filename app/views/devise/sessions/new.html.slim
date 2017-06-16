@@ -1,10 +1,10 @@
-.login-container
-  = form_for(resource, html: {class: 'login-form'}, as: resource_name, url: session_path(resource_name)) do |f|
+.login__container
+  = form_for(resource, html: {class: 'login__form'}, as: resource_name, url: session_path(resource_name)) do |f|
     .text-center
-      =image_tag("logo.svg", class: "login-logo")
+      =image_tag("logo.svg", class: "login__logo")
     .field
       = f.label :email
-      = f.email_field :email, autofocus: true
+      = f.email_field :email, autofocus: true, placeholder: "arnold.swartzenegger@thepump.com"
     .field
       = f.label :password
       = f.password_field :password, autocomplete: "off"
@@ -12,6 +12,6 @@
       .field
         = f.check_box :remember_me
         = f.label :remember_me
-    .actions.login-button
-      = f.submit "Log in", class: "button-large button-block"
+    .actions.login__button
+      = f.submit "Log in", class: "button--large button--block"
     = render "devise/shared/links"
