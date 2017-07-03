@@ -1,17 +1,86 @@
 .page__container
+
+.page__container
   .page__header
-    h1.text--l Clients
-    .header__actions
-      button.button--icon-only=image_tag("icons/search.svg")
+    form
+      .header-search
+        input type="text" value="Clients" class="header__input" placeholder="Start typing to search..."
+        button.button--icon-only.header-search__button=image_tag("icons/search.svg")
   .page__content
     ul.list--unstyled.list--standard
-      -6.times do
+      li.list__item--standard
+        .list-item__image
+          .avatar
+            svg height="60" viewbox=("0 0 60 60") width="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              title
+                | Group 3
+              defs
+                circle#a cx="30" cy="30" r="30"
+              g fill="none" fill-rule="evenodd"
+                g
+                  g
+                    g
+                      mask#b fill="#fff"
+                        use xlink:href="#a"
+                      use fill="#29EB84" fill-opacity=".2" xlink:href="#a"
+                      g mask="url(#b)"
+                        g transform=("translate(7 10)")
+                          rect fill="#333" height="30" rx="12" width="26" x="10"
+                          rect fill="#29EB84" height="8" rx="3" width="28" x="9" y="6"
+                          rect fill="#333" height="30" rx="12" width="46" y="32"
+
+          =image_tag("icons/exclamation.svg", class: "list-item__icon")
+        .list-item__content
+          .list-item__progress
+            -70.times do
+              .list-item__progress-bar style="height: 50%;"
+          .list-item__text-content
+            strong.text--m Carl Payne
+            .text--s.text--error
+              strong Checks in tomorrow
+
+      li.list__item--standard
+        .list-item__image
+          .avatar
+            svg height="60" viewbox=("0 0 60 60") width="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              title
+                | Group 3
+              defs
+                circle#a cx="30" cy="30" r="30"
+              g fill="none" fill-rule="evenodd"
+                g
+                  g
+                    g
+                      mask#b fill="#fff"
+                        use xlink:href="#a"
+                      use fill="#6655F4" fill-opacity=".2" xlink:href="#a"
+                      g mask="url(#b)"
+                        g transform=("translate(7 10)")
+                          rect fill="#333" height="30" rx="12" width="26" x="10"
+                          rect fill="#6655F4" height="8" rx="3" width="28" x="9" y="6"
+                          rect fill="#333" height="30" rx="12" width="46" y="32"
+
+          =image_tag("icons/exclamation.svg", class: "list-item__icon")
+        .list-item__content
+          .list-item__progress
+            -70.times do
+              .list-item__progress-bar style="height: 50%;"
+          .list-item__text-content
+            strong.text--m Carl Payne
+            .text--s.text--error
+              strong Checks in tomorrow
+
+      -5.times do
         li.list__item--standard
           .list-item__image
             .avatar style="background-image: url('http://placehold.it/250x450');"
           .list-item__content
-            strong.text--m Carl Payne
-            .text--s.text--muted Checks in tomorrow
+            .list-item__progress
+              -70.times do
+                .list-item__progress-bar style="height: 50%;"
+            .list-item__text-content
+              strong.text--m Carl Payne
+              .text--s.text--muted Checks in tomorrow
 
     .text--center
       button.button Add a client

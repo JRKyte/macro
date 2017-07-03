@@ -18,6 +18,14 @@
   position: relative;
   margin-right: 20px;
 }
+.list-item__icon {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
 .list-item__content {
   position: relative;
   flex: 1;
@@ -33,4 +41,28 @@
     height: 14px;
     width: 9px;
   }
+}
+.list-item__text-content {
+  position: relative;
+  z-index: 2;
+}
+.list-item__progress {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 70px;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: flex-end;
+}
+.list-item__progress-bar {
+  background-color: #EAFDF3;
+  min-width: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: bottom;
 }
