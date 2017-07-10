@@ -83,4 +83,27 @@
               .text--s.text--muted Checks in tomorrow
 
     .text--center
-      button.button Add a client
+      button.button#modalTrigger Add a client
+
+#modalWindow.modal__wrapper
+  .modal
+    .modal__container
+      .modal__header
+        h1.text--l New client
+      .modal__content
+        form
+          label for="client-name"
+            'Client name
+            input type="text" id="client-name" placeholder="Arnold Swartzenegger"
+          label for="client-age"
+            'Client age
+            input type="number" id="client-age" placeholder="69"
+          label for="client-height"
+            'Client height
+            input type="text" id="client-height" placeholder="6ft 1in"
+          label for="client-weight"
+            'Client weight
+            input type="text" id="client-weight" placeholder="17st 1lb"
+      .modal__footer
+        a href="#" class="button--large button--block" Create new client
+        button.button--clear.button--block.closeModal Cancel
